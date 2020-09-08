@@ -1,0 +1,4 @@
+* * * * * /usr/bin/php /var/www/forex/yii user-credit/index  > /var/log/my-cron-job.log 2>&1
+
+* * * * * /usr/bin/php /var/www/forex/yii user-credit/file > /var/log/my-cron-job.log 2>&1
+

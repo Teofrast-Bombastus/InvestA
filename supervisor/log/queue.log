@@ -1,0 +1,672 @@
+An Error occurred while handling another error:
+yii\base\InvalidConfigException: Unknown component ID: queue in /var/www/forex/vendor/yiisoft/yii2/di/ServiceLocator.php:139
+Stack trace:
+#0 /var/www/forex/vendor/yiisoft/yii2/base/Module.php(742): yii\di\ServiceLocator->get('queue', true)
+#1 /var/www/forex/common/bootstrap/SetUp.php(55): yii\base\Module->get('queue')
+#2 [internal function]: common\bootstrap\SetUp->common\bootstrap\{closure}(Object(yii\di\Container), Array, Array)
+#3 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(163): call_user_func(Object(Closure), Object(yii\di\Container), Array, Array)
+#4 /var/www/forex/common/bootstrap/SetUp.php(79): yii\di\Container->get('yii\\queue\\Queue')
+#5 [internal function]: common\bootstrap\SetUp->common\bootstrap\{closure}(Object(yii\di\Container), Array, Array)
+#6 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(163): call_user_func(Object(Closure), Object(yii\di\Container), Array, Array)
+#7 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(468): yii\di\Container->get('shop\\dispatcher...')
+#8 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(371): yii\di\Container->resolveDependencies(Array, Object(ReflectionClass))
+#9 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('shop\\services\\T...', Array, Array)
+#10 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(468): yii\di\Container->get('shop\\services\\T...')
+#11 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(371): yii\di\Container->resolveDependencies(Array, Object(ReflectionClass))
+#12 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('shop\\useCases\\m...', Array, Array)
+#13 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(468): yii\di\Container->get('shop\\useCases\\m...')
+#14 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(371): yii\di\Container->resolveDependencies(Array, Object(ReflectionClass))
+#15 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('console\\control...', Array, Array)
+#16 /var/www/forex/vendor/yiisoft/yii2/BaseYii.php(345): yii\di\Container->get('console\\control...', Array)
+#17 /var/www/forex/vendor/yiisoft/yii2/base/Module.php(642): yii\BaseYii::createObject('console\\control...', Array)
+#18 /var/www/forex/vendor/yiisoft/yii2/base/Module.php(596): yii\base\Module->createControllerByID('role')
+#19 /var/www/forex/vendor/yiisoft/yii2/console/UnknownCommandException.php(78): yii\base\Module->createController('')
+#20 /var/www/forex/vendor/yiisoft/yii2/console/ErrorHandler.php(35): yii\console\UnknownCommandException->getSuggestedAlternatives()
+#21 /var/www/forex/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\console\ErrorHandler->renderException(Object(yii\console\UnknownCommandException))
+#22 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\console\UnknownCommandException))
+#23 {main}
+Previous exception:
+yii\base\InvalidRouteException: Unable to resolve the request "queue/listen". in /var/www/forex/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/forex/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('queue/listen', Array)
+#1 /var/www/forex/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('queue/listen', Array)
+#2 /var/www/forex/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 /var/www/forex/yii(23): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "queue/listen". in /var/www/forex/vendor/yiisoft/yii2/console/Application.php:183
+Stack trace:
+#0 /var/www/forex/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('queue/listen', Array)
+#1 /var/www/forex/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 /var/www/forex/yii(23): yii\base\Application->run()
+#3 {main}
+An Error occurred while handling another error:
+yii\base\InvalidConfigException: Unknown component ID: queue in /var/www/forex/vendor/yiisoft/yii2/di/ServiceLocator.php:139
+Stack trace:
+#0 /var/www/forex/vendor/yiisoft/yii2/base/Module.php(742): yii\di\ServiceLocator->get('queue', true)
+#1 /var/www/forex/common/bootstrap/SetUp.php(55): yii\base\Module->get('queue')
+#2 [internal function]: common\bootstrap\SetUp->common\bootstrap\{closure}(Object(yii\di\Container), Array, Array)
+#3 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(163): call_user_func(Object(Closure), Object(yii\di\Container), Array, Array)
+#4 /var/www/forex/common/bootstrap/SetUp.php(79): yii\di\Container->get('yii\\queue\\Queue')
+#5 [internal function]: common\bootstrap\SetUp->common\bootstrap\{closure}(Object(yii\di\Container), Array, Array)
+#6 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(163): call_user_func(Object(Closure), Object(yii\di\Container), Array, Array)
+#7 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(468): yii\di\Container->get('shop\\dispatcher...')
+#8 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(371): yii\di\Container->resolveDependencies(Array, Object(ReflectionClass))
+#9 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('shop\\services\\T...', Array, Array)
+#10 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(468): yii\di\Container->get('shop\\services\\T...')
+#11 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(371): yii\di\Container->resolveDependencies(Array, Object(ReflectionClass))
+#12 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('shop\\useCases\\m...', Array, Array)
+#13 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(468): yii\di\Container->get('shop\\useCases\\m...')
+#14 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(371): yii\di\Container->resolveDependencies(Array, Object(ReflectionClass))
+#15 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('console\\control...', Array, Array)
+#16 /var/www/forex/vendor/yiisoft/yii2/BaseYii.php(345): yii\di\Container->get('console\\control...', Array)
+#17 /var/www/forex/vendor/yiisoft/yii2/base/Module.php(642): yii\BaseYii::createObject('console\\control...', Array)
+#18 /var/www/forex/vendor/yiisoft/yii2/base/Module.php(596): yii\base\Module->createControllerByID('role')
+#19 /var/www/forex/vendor/yiisoft/yii2/console/UnknownCommandException.php(78): yii\base\Module->createController('')
+#20 /var/www/forex/vendor/yiisoft/yii2/console/ErrorHandler.php(35): yii\console\UnknownCommandException->getSuggestedAlternatives()
+#21 /var/www/forex/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\console\ErrorHandler->renderException(Object(yii\console\UnknownCommandException))
+#22 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\console\UnknownCommandException))
+#23 {main}
+Previous exception:
+yii\base\InvalidRouteException: Unable to resolve the request "queue/listen". in /var/www/forex/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/forex/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('queue/listen', Array)
+#1 /var/www/forex/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('queue/listen', Array)
+#2 /var/www/forex/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 /var/www/forex/yii(23): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "queue/listen". in /var/www/forex/vendor/yiisoft/yii2/console/Application.php:183
+Stack trace:
+#0 /var/www/forex/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('queue/listen', Array)
+#1 /var/www/forex/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 /var/www/forex/yii(23): yii\base\Application->run()
+#3 {main}
+An Error occurred while handling another error:
+yii\base\InvalidConfigException: Unknown component ID: queue in /var/www/forex/vendor/yiisoft/yii2/di/ServiceLocator.php:139
+Stack trace:
+#0 /var/www/forex/vendor/yiisoft/yii2/base/Module.php(742): yii\di\ServiceLocator->get('queue', true)
+#1 /var/www/forex/common/bootstrap/SetUp.php(55): yii\base\Module->get('queue')
+#2 [internal function]: common\bootstrap\SetUp->common\bootstrap\{closure}(Object(yii\di\Container), Array, Array)
+#3 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(163): call_user_func(Object(Closure), Object(yii\di\Container), Array, Array)
+#4 /var/www/forex/common/bootstrap/SetUp.php(79): yii\di\Container->get('yii\\queue\\Queue')
+#5 [internal function]: common\bootstrap\SetUp->common\bootstrap\{closure}(Object(yii\di\Container), Array, Array)
+#6 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(163): call_user_func(Object(Closure), Object(yii\di\Container), Array, Array)
+#7 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(468): yii\di\Container->get('shop\\dispatcher...')
+#8 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(371): yii\di\Container->resolveDependencies(Array, Object(ReflectionClass))
+#9 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('shop\\services\\T...', Array, Array)
+#10 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(468): yii\di\Container->get('shop\\services\\T...')
+#11 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(371): yii\di\Container->resolveDependencies(Array, Object(ReflectionClass))
+#12 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('shop\\useCases\\m...', Array, Array)
+#13 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(468): yii\di\Container->get('shop\\useCases\\m...')
+#14 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(371): yii\di\Container->resolveDependencies(Array, Object(ReflectionClass))
+#15 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('console\\control...', Array, Array)
+#16 /var/www/forex/vendor/yiisoft/yii2/BaseYii.php(345): yii\di\Container->get('console\\control...', Array)
+#17 /var/www/forex/vendor/yiisoft/yii2/base/Module.php(642): yii\BaseYii::createObject('console\\control...', Array)
+#18 /var/www/forex/vendor/yiisoft/yii2/base/Module.php(596): yii\base\Module->createControllerByID('role')
+#19 /var/www/forex/vendor/yiisoft/yii2/console/UnknownCommandException.php(78): yii\base\Module->createController('')
+#20 /var/www/forex/vendor/yiisoft/yii2/console/ErrorHandler.php(35): yii\console\UnknownCommandException->getSuggestedAlternatives()
+#21 /var/www/forex/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\console\ErrorHandler->renderException(Object(yii\console\UnknownCommandException))
+#22 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\console\UnknownCommandException))
+#23 {main}
+Previous exception:
+yii\base\InvalidRouteException: Unable to resolve the request "queue/listen". in /var/www/forex/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/forex/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('queue/listen', Array)
+#1 /var/www/forex/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('queue/listen', Array)
+#2 /var/www/forex/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 /var/www/forex/yii(23): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "queue/listen". in /var/www/forex/vendor/yiisoft/yii2/console/Application.php:183
+Stack trace:
+#0 /var/www/forex/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('queue/listen', Array)
+#1 /var/www/forex/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 /var/www/forex/yii(23): yii\base\Application->run()
+#3 {main}
+An Error occurred while handling another error:
+yii\base\InvalidConfigException: Unknown component ID: queue in /var/www/forex/vendor/yiisoft/yii2/di/ServiceLocator.php:139
+Stack trace:
+#0 /var/www/forex/vendor/yiisoft/yii2/base/Module.php(742): yii\di\ServiceLocator->get('queue', true)
+#1 /var/www/forex/common/bootstrap/SetUp.php(55): yii\base\Module->get('queue')
+#2 [internal function]: common\bootstrap\SetUp->common\bootstrap\{closure}(Object(yii\di\Container), Array, Array)
+#3 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(163): call_user_func(Object(Closure), Object(yii\di\Container), Array, Array)
+#4 /var/www/forex/common/bootstrap/SetUp.php(79): yii\di\Container->get('yii\\queue\\Queue')
+#5 [internal function]: common\bootstrap\SetUp->common\bootstrap\{closure}(Object(yii\di\Container), Array, Array)
+#6 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(163): call_user_func(Object(Closure), Object(yii\di\Container), Array, Array)
+#7 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(468): yii\di\Container->get('shop\\dispatcher...')
+#8 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(371): yii\di\Container->resolveDependencies(Array, Object(ReflectionClass))
+#9 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('shop\\services\\T...', Array, Array)
+#10 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(468): yii\di\Container->get('shop\\services\\T...')
+#11 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(371): yii\di\Container->resolveDependencies(Array, Object(ReflectionClass))
+#12 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('shop\\useCases\\m...', Array, Array)
+#13 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(468): yii\di\Container->get('shop\\useCases\\m...')
+#14 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(371): yii\di\Container->resolveDependencies(Array, Object(ReflectionClass))
+#15 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('console\\control...', Array, Array)
+#16 /var/www/forex/vendor/yiisoft/yii2/BaseYii.php(345): yii\di\Container->get('console\\control...', Array)
+#17 /var/www/forex/vendor/yiisoft/yii2/base/Module.php(642): yii\BaseYii::createObject('console\\control...', Array)
+#18 /var/www/forex/vendor/yiisoft/yii2/base/Module.php(596): yii\base\Module->createControllerByID('role')
+#19 /var/www/forex/vendor/yiisoft/yii2/console/UnknownCommandException.php(78): yii\base\Module->createController('')
+#20 /var/www/forex/vendor/yiisoft/yii2/console/ErrorHandler.php(35): yii\console\UnknownCommandException->getSuggestedAlternatives()
+#21 /var/www/forex/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\console\ErrorHandler->renderException(Object(yii\console\UnknownCommandException))
+#22 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\console\UnknownCommandException))
+#23 {main}
+Previous exception:
+yii\base\InvalidRouteException: Unable to resolve the request "queue/listen". in /var/www/forex/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/forex/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('queue/listen', Array)
+#1 /var/www/forex/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('queue/listen', Array)
+#2 /var/www/forex/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 /var/www/forex/yii(23): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "queue/listen". in /var/www/forex/vendor/yiisoft/yii2/console/Application.php:183
+Stack trace:
+#0 /var/www/forex/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('queue/listen', Array)
+#1 /var/www/forex/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 /var/www/forex/yii(23): yii\base\Application->run()
+#3 {main}
+An Error occurred while handling another error:
+yii\base\InvalidConfigException: Unknown component ID: queue in /var/www/forex/vendor/yiisoft/yii2/di/ServiceLocator.php:139
+Stack trace:
+#0 /var/www/forex/vendor/yiisoft/yii2/base/Module.php(742): yii\di\ServiceLocator->get('queue', true)
+#1 /var/www/forex/common/bootstrap/SetUp.php(55): yii\base\Module->get('queue')
+#2 [internal function]: common\bootstrap\SetUp->common\bootstrap\{closure}(Object(yii\di\Container), Array, Array)
+#3 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(163): call_user_func(Object(Closure), Object(yii\di\Container), Array, Array)
+#4 /var/www/forex/common/bootstrap/SetUp.php(79): yii\di\Container->get('yii\\queue\\Queue')
+#5 [internal function]: common\bootstrap\SetUp->common\bootstrap\{closure}(Object(yii\di\Container), Array, Array)
+#6 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(163): call_user_func(Object(Closure), Object(yii\di\Container), Array, Array)
+#7 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(468): yii\di\Container->get('shop\\dispatcher...')
+#8 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(371): yii\di\Container->resolveDependencies(Array, Object(ReflectionClass))
+#9 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('shop\\services\\T...', Array, Array)
+#10 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(468): yii\di\Container->get('shop\\services\\T...')
+#11 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(371): yii\di\Container->resolveDependencies(Array, Object(ReflectionClass))
+#12 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('shop\\useCases\\m...', Array, Array)
+#13 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(468): yii\di\Container->get('shop\\useCases\\m...')
+#14 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(371): yii\di\Container->resolveDependencies(Array, Object(ReflectionClass))
+#15 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('console\\control...', Array, Array)
+#16 /var/www/forex/vendor/yiisoft/yii2/BaseYii.php(345): yii\di\Container->get('console\\control...', Array)
+#17 /var/www/forex/vendor/yiisoft/yii2/base/Module.php(642): yii\BaseYii::createObject('console\\control...', Array)
+#18 /var/www/forex/vendor/yiisoft/yii2/base/Module.php(596): yii\base\Module->createControllerByID('role')
+#19 /var/www/forex/vendor/yiisoft/yii2/console/UnknownCommandException.php(78): yii\base\Module->createController('')
+#20 /var/www/forex/vendor/yiisoft/yii2/console/ErrorHandler.php(35): yii\console\UnknownCommandException->getSuggestedAlternatives()
+#21 /var/www/forex/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\console\ErrorHandler->renderException(Object(yii\console\UnknownCommandException))
+#22 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\console\UnknownCommandException))
+#23 {main}
+Previous exception:
+yii\base\InvalidRouteException: Unable to resolve the request "queue/listen". in /var/www/forex/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/forex/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('queue/listen', Array)
+#1 /var/www/forex/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('queue/listen', Array)
+#2 /var/www/forex/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 /var/www/forex/yii(23): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "queue/listen". in /var/www/forex/vendor/yiisoft/yii2/console/Application.php:183
+Stack trace:
+#0 /var/www/forex/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('queue/listen', Array)
+#1 /var/www/forex/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 /var/www/forex/yii(23): yii\base\Application->run()
+#3 {main}
+An Error occurred while handling another error:
+yii\base\InvalidConfigException: Unknown component ID: queue in /var/www/forex/vendor/yiisoft/yii2/di/ServiceLocator.php:139
+Stack trace:
+#0 /var/www/forex/vendor/yiisoft/yii2/base/Module.php(742): yii\di\ServiceLocator->get('queue', true)
+#1 /var/www/forex/common/bootstrap/SetUp.php(55): yii\base\Module->get('queue')
+#2 [internal function]: common\bootstrap\SetUp->common\bootstrap\{closure}(Object(yii\di\Container), Array, Array)
+#3 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(163): call_user_func(Object(Closure), Object(yii\di\Container), Array, Array)
+#4 /var/www/forex/common/bootstrap/SetUp.php(79): yii\di\Container->get('yii\\queue\\Queue')
+#5 [internal function]: common\bootstrap\SetUp->common\bootstrap\{closure}(Object(yii\di\Container), Array, Array)
+#6 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(163): call_user_func(Object(Closure), Object(yii\di\Container), Array, Array)
+#7 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(468): yii\di\Container->get('shop\\dispatcher...')
+#8 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(371): yii\di\Container->resolveDependencies(Array, Object(ReflectionClass))
+#9 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('shop\\services\\T...', Array, Array)
+#10 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(468): yii\di\Container->get('shop\\services\\T...')
+#11 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(371): yii\di\Container->resolveDependencies(Array, Object(ReflectionClass))
+#12 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('shop\\useCases\\m...', Array, Array)
+#13 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(468): yii\di\Container->get('shop\\useCases\\m...')
+#14 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(371): yii\di\Container->resolveDependencies(Array, Object(ReflectionClass))
+#15 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('console\\control...', Array, Array)
+#16 /var/www/forex/vendor/yiisoft/yii2/BaseYii.php(345): yii\di\Container->get('console\\control...', Array)
+#17 /var/www/forex/vendor/yiisoft/yii2/base/Module.php(642): yii\BaseYii::createObject('console\\control...', Array)
+#18 /var/www/forex/vendor/yiisoft/yii2/base/Module.php(596): yii\base\Module->createControllerByID('role')
+#19 /var/www/forex/vendor/yiisoft/yii2/console/UnknownCommandException.php(78): yii\base\Module->createController('')
+#20 /var/www/forex/vendor/yiisoft/yii2/console/ErrorHandler.php(35): yii\console\UnknownCommandException->getSuggestedAlternatives()
+#21 /var/www/forex/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\console\ErrorHandler->renderException(Object(yii\console\UnknownCommandException))
+#22 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\console\UnknownCommandException))
+#23 {main}
+Previous exception:
+yii\base\InvalidRouteException: Unable to resolve the request "queue/listen". in /var/www/forex/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/forex/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('queue/listen', Array)
+#1 /var/www/forex/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('queue/listen', Array)
+#2 /var/www/forex/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 /var/www/forex/yii(23): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "queue/listen". in /var/www/forex/vendor/yiisoft/yii2/console/Application.php:183
+Stack trace:
+#0 /var/www/forex/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('queue/listen', Array)
+#1 /var/www/forex/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 /var/www/forex/yii(23): yii\base\Application->run()
+#3 {main}
+An Error occurred while handling another error:
+yii\base\InvalidConfigException: Unknown component ID: queue in /var/www/forex/vendor/yiisoft/yii2/di/ServiceLocator.php:139
+Stack trace:
+#0 /var/www/forex/vendor/yiisoft/yii2/base/Module.php(742): yii\di\ServiceLocator->get('queue', true)
+#1 /var/www/forex/common/bootstrap/SetUp.php(55): yii\base\Module->get('queue')
+#2 [internal function]: common\bootstrap\SetUp->common\bootstrap\{closure}(Object(yii\di\Container), Array, Array)
+#3 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(163): call_user_func(Object(Closure), Object(yii\di\Container), Array, Array)
+#4 /var/www/forex/common/bootstrap/SetUp.php(79): yii\di\Container->get('yii\\queue\\Queue')
+#5 [internal function]: common\bootstrap\SetUp->common\bootstrap\{closure}(Object(yii\di\Container), Array, Array)
+#6 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(163): call_user_func(Object(Closure), Object(yii\di\Container), Array, Array)
+#7 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(468): yii\di\Container->get('shop\\dispatcher...')
+#8 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(371): yii\di\Container->resolveDependencies(Array, Object(ReflectionClass))
+#9 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('shop\\services\\T...', Array, Array)
+#10 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(468): yii\di\Container->get('shop\\services\\T...')
+#11 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(371): yii\di\Container->resolveDependencies(Array, Object(ReflectionClass))
+#12 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('shop\\useCases\\m...', Array, Array)
+#13 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(468): yii\di\Container->get('shop\\useCases\\m...')
+#14 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(371): yii\di\Container->resolveDependencies(Array, Object(ReflectionClass))
+#15 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('console\\control...', Array, Array)
+#16 /var/www/forex/vendor/yiisoft/yii2/BaseYii.php(345): yii\di\Container->get('console\\control...', Array)
+#17 /var/www/forex/vendor/yiisoft/yii2/base/Module.php(642): yii\BaseYii::createObject('console\\control...', Array)
+#18 /var/www/forex/vendor/yiisoft/yii2/base/Module.php(596): yii\base\Module->createControllerByID('role')
+#19 /var/www/forex/vendor/yiisoft/yii2/console/UnknownCommandException.php(78): yii\base\Module->createController('')
+#20 /var/www/forex/vendor/yiisoft/yii2/console/ErrorHandler.php(35): yii\console\UnknownCommandException->getSuggestedAlternatives()
+#21 /var/www/forex/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\console\ErrorHandler->renderException(Object(yii\console\UnknownCommandException))
+#22 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\console\UnknownCommandException))
+#23 {main}
+Previous exception:
+yii\base\InvalidRouteException: Unable to resolve the request "queue/listen". in /var/www/forex/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/forex/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('queue/listen', Array)
+#1 /var/www/forex/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('queue/listen', Array)
+#2 /var/www/forex/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 /var/www/forex/yii(23): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "queue/listen". in /var/www/forex/vendor/yiisoft/yii2/console/Application.php:183
+Stack trace:
+#0 /var/www/forex/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('queue/listen', Array)
+#1 /var/www/forex/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 /var/www/forex/yii(23): yii\base\Application->run()
+#3 {main}
+An Error occurred while handling another error:
+yii\base\InvalidConfigException: Unknown component ID: queue in /var/www/forex/vendor/yiisoft/yii2/di/ServiceLocator.php:139
+Stack trace:
+#0 /var/www/forex/vendor/yiisoft/yii2/base/Module.php(742): yii\di\ServiceLocator->get('queue', true)
+#1 /var/www/forex/common/bootstrap/SetUp.php(55): yii\base\Module->get('queue')
+#2 [internal function]: common\bootstrap\SetUp->common\bootstrap\{closure}(Object(yii\di\Container), Array, Array)
+#3 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(163): call_user_func(Object(Closure), Object(yii\di\Container), Array, Array)
+#4 /var/www/forex/common/bootstrap/SetUp.php(79): yii\di\Container->get('yii\\queue\\Queue')
+#5 [internal function]: common\bootstrap\SetUp->common\bootstrap\{closure}(Object(yii\di\Container), Array, Array)
+#6 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(163): call_user_func(Object(Closure), Object(yii\di\Container), Array, Array)
+#7 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(468): yii\di\Container->get('shop\\dispatcher...')
+#8 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(371): yii\di\Container->resolveDependencies(Array, Object(ReflectionClass))
+#9 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('shop\\services\\T...', Array, Array)
+#10 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(468): yii\di\Container->get('shop\\services\\T...')
+#11 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(371): yii\di\Container->resolveDependencies(Array, Object(ReflectionClass))
+#12 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('shop\\useCases\\m...', Array, Array)
+#13 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(468): yii\di\Container->get('shop\\useCases\\m...')
+#14 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(371): yii\di\Container->resolveDependencies(Array, Object(ReflectionClass))
+#15 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('console\\control...', Array, Array)
+#16 /var/www/forex/vendor/yiisoft/yii2/BaseYii.php(345): yii\di\Container->get('console\\control...', Array)
+#17 /var/www/forex/vendor/yiisoft/yii2/base/Module.php(642): yii\BaseYii::createObject('console\\control...', Array)
+#18 /var/www/forex/vendor/yiisoft/yii2/base/Module.php(596): yii\base\Module->createControllerByID('role')
+#19 /var/www/forex/vendor/yiisoft/yii2/console/UnknownCommandException.php(78): yii\base\Module->createController('')
+#20 /var/www/forex/vendor/yiisoft/yii2/console/ErrorHandler.php(35): yii\console\UnknownCommandException->getSuggestedAlternatives()
+#21 /var/www/forex/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\console\ErrorHandler->renderException(Object(yii\console\UnknownCommandException))
+#22 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\console\UnknownCommandException))
+#23 {main}
+Previous exception:
+yii\base\InvalidRouteException: Unable to resolve the request "queue/listen". in /var/www/forex/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/forex/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('queue/listen', Array)
+#1 /var/www/forex/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('queue/listen', Array)
+#2 /var/www/forex/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 /var/www/forex/yii(23): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "queue/listen". in /var/www/forex/vendor/yiisoft/yii2/console/Application.php:183
+Stack trace:
+#0 /var/www/forex/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('queue/listen', Array)
+#1 /var/www/forex/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 /var/www/forex/yii(23): yii\base\Application->run()
+#3 {main}
+An Error occurred while handling another error:
+yii\base\InvalidConfigException: Unknown component ID: queue in /var/www/forex/vendor/yiisoft/yii2/di/ServiceLocator.php:139
+Stack trace:
+#0 /var/www/forex/vendor/yiisoft/yii2/base/Module.php(742): yii\di\ServiceLocator->get('queue', true)
+#1 /var/www/forex/common/bootstrap/SetUp.php(55): yii\base\Module->get('queue')
+#2 [internal function]: common\bootstrap\SetUp->common\bootstrap\{closure}(Object(yii\di\Container), Array, Array)
+#3 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(163): call_user_func(Object(Closure), Object(yii\di\Container), Array, Array)
+#4 /var/www/forex/common/bootstrap/SetUp.php(79): yii\di\Container->get('yii\\queue\\Queue')
+#5 [internal function]: common\bootstrap\SetUp->common\bootstrap\{closure}(Object(yii\di\Container), Array, Array)
+#6 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(163): call_user_func(Object(Closure), Object(yii\di\Container), Array, Array)
+#7 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(468): yii\di\Container->get('shop\\dispatcher...')
+#8 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(371): yii\di\Container->resolveDependencies(Array, Object(ReflectionClass))
+#9 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('shop\\services\\T...', Array, Array)
+#10 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(468): yii\di\Container->get('shop\\services\\T...')
+#11 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(371): yii\di\Container->resolveDependencies(Array, Object(ReflectionClass))
+#12 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('shop\\useCases\\m...', Array, Array)
+#13 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(468): yii\di\Container->get('shop\\useCases\\m...')
+#14 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(371): yii\di\Container->resolveDependencies(Array, Object(ReflectionClass))
+#15 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('console\\control...', Array, Array)
+#16 /var/www/forex/vendor/yiisoft/yii2/BaseYii.php(345): yii\di\Container->get('console\\control...', Array)
+#17 /var/www/forex/vendor/yiisoft/yii2/base/Module.php(642): yii\BaseYii::createObject('console\\control...', Array)
+#18 /var/www/forex/vendor/yiisoft/yii2/base/Module.php(596): yii\base\Module->createControllerByID('role')
+#19 /var/www/forex/vendor/yiisoft/yii2/console/UnknownCommandException.php(78): yii\base\Module->createController('')
+#20 /var/www/forex/vendor/yiisoft/yii2/console/ErrorHandler.php(35): yii\console\UnknownCommandException->getSuggestedAlternatives()
+#21 /var/www/forex/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\console\ErrorHandler->renderException(Object(yii\console\UnknownCommandException))
+#22 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\console\UnknownCommandException))
+#23 {main}
+Previous exception:
+yii\base\InvalidRouteException: Unable to resolve the request "queue/listen". in /var/www/forex/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/forex/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('queue/listen', Array)
+#1 /var/www/forex/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('queue/listen', Array)
+#2 /var/www/forex/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 /var/www/forex/yii(23): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "queue/listen". in /var/www/forex/vendor/yiisoft/yii2/console/Application.php:183
+Stack trace:
+#0 /var/www/forex/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('queue/listen', Array)
+#1 /var/www/forex/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 /var/www/forex/yii(23): yii\base\Application->run()
+#3 {main}
+An Error occurred while handling another error:
+yii\base\InvalidConfigException: Unknown component ID: queue in /var/www/forex/vendor/yiisoft/yii2/di/ServiceLocator.php:139
+Stack trace:
+#0 /var/www/forex/vendor/yiisoft/yii2/base/Module.php(742): yii\di\ServiceLocator->get('queue', true)
+#1 /var/www/forex/common/bootstrap/SetUp.php(55): yii\base\Module->get('queue')
+#2 [internal function]: common\bootstrap\SetUp->common\bootstrap\{closure}(Object(yii\di\Container), Array, Array)
+#3 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(163): call_user_func(Object(Closure), Object(yii\di\Container), Array, Array)
+#4 /var/www/forex/common/bootstrap/SetUp.php(79): yii\di\Container->get('yii\\queue\\Queue')
+#5 [internal function]: common\bootstrap\SetUp->common\bootstrap\{closure}(Object(yii\di\Container), Array, Array)
+#6 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(163): call_user_func(Object(Closure), Object(yii\di\Container), Array, Array)
+#7 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(468): yii\di\Container->get('shop\\dispatcher...')
+#8 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(371): yii\di\Container->resolveDependencies(Array, Object(ReflectionClass))
+#9 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('shop\\services\\T...', Array, Array)
+#10 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(468): yii\di\Container->get('shop\\services\\T...')
+#11 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(371): yii\di\Container->resolveDependencies(Array, Object(ReflectionClass))
+#12 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('shop\\useCases\\m...', Array, Array)
+#13 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(468): yii\di\Container->get('shop\\useCases\\m...')
+#14 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(371): yii\di\Container->resolveDependencies(Array, Object(ReflectionClass))
+#15 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('console\\control...', Array, Array)
+#16 /var/www/forex/vendor/yiisoft/yii2/BaseYii.php(345): yii\di\Container->get('console\\control...', Array)
+#17 /var/www/forex/vendor/yiisoft/yii2/base/Module.php(642): yii\BaseYii::createObject('console\\control...', Array)
+#18 /var/www/forex/vendor/yiisoft/yii2/base/Module.php(596): yii\base\Module->createControllerByID('role')
+#19 /var/www/forex/vendor/yiisoft/yii2/console/UnknownCommandException.php(78): yii\base\Module->createController('')
+#20 /var/www/forex/vendor/yiisoft/yii2/console/ErrorHandler.php(35): yii\console\UnknownCommandException->getSuggestedAlternatives()
+#21 /var/www/forex/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\console\ErrorHandler->renderException(Object(yii\console\UnknownCommandException))
+#22 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\console\UnknownCommandException))
+#23 {main}
+Previous exception:
+yii\base\InvalidRouteException: Unable to resolve the request "queue/listen". in /var/www/forex/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/forex/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('queue/listen', Array)
+#1 /var/www/forex/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('queue/listen', Array)
+#2 /var/www/forex/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 /var/www/forex/yii(23): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "queue/listen". in /var/www/forex/vendor/yiisoft/yii2/console/Application.php:183
+Stack trace:
+#0 /var/www/forex/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('queue/listen', Array)
+#1 /var/www/forex/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 /var/www/forex/yii(23): yii\base\Application->run()
+#3 {main}
+An Error occurred while handling another error:
+yii\base\InvalidConfigException: Unknown component ID: queue in /var/www/forex/vendor/yiisoft/yii2/di/ServiceLocator.php:139
+Stack trace:
+#0 /var/www/forex/vendor/yiisoft/yii2/base/Module.php(742): yii\di\ServiceLocator->get('queue', true)
+#1 /var/www/forex/common/bootstrap/SetUp.php(55): yii\base\Module->get('queue')
+#2 [internal function]: common\bootstrap\SetUp->common\bootstrap\{closure}(Object(yii\di\Container), Array, Array)
+#3 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(163): call_user_func(Object(Closure), Object(yii\di\Container), Array, Array)
+#4 /var/www/forex/common/bootstrap/SetUp.php(79): yii\di\Container->get('yii\\queue\\Queue')
+#5 [internal function]: common\bootstrap\SetUp->common\bootstrap\{closure}(Object(yii\di\Container), Array, Array)
+#6 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(163): call_user_func(Object(Closure), Object(yii\di\Container), Array, Array)
+#7 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(468): yii\di\Container->get('shop\\dispatcher...')
+#8 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(371): yii\di\Container->resolveDependencies(Array, Object(ReflectionClass))
+#9 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('shop\\services\\T...', Array, Array)
+#10 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(468): yii\di\Container->get('shop\\services\\T...')
+#11 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(371): yii\di\Container->resolveDependencies(Array, Object(ReflectionClass))
+#12 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('shop\\useCases\\m...', Array, Array)
+#13 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(468): yii\di\Container->get('shop\\useCases\\m...')
+#14 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(371): yii\di\Container->resolveDependencies(Array, Object(ReflectionClass))
+#15 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('console\\control...', Array, Array)
+#16 /var/www/forex/vendor/yiisoft/yii2/BaseYii.php(345): yii\di\Container->get('console\\control...', Array)
+#17 /var/www/forex/vendor/yiisoft/yii2/base/Module.php(642): yii\BaseYii::createObject('console\\control...', Array)
+#18 /var/www/forex/vendor/yiisoft/yii2/base/Module.php(596): yii\base\Module->createControllerByID('role')
+#19 /var/www/forex/vendor/yiisoft/yii2/console/UnknownCommandException.php(78): yii\base\Module->createController('')
+#20 /var/www/forex/vendor/yiisoft/yii2/console/ErrorHandler.php(35): yii\console\UnknownCommandException->getSuggestedAlternatives()
+#21 /var/www/forex/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\console\ErrorHandler->renderException(Object(yii\console\UnknownCommandException))
+#22 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\console\UnknownCommandException))
+#23 {main}
+Previous exception:
+yii\base\InvalidRouteException: Unable to resolve the request "queue/listen". in /var/www/forex/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/forex/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('queue/listen', Array)
+#1 /var/www/forex/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('queue/listen', Array)
+#2 /var/www/forex/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 /var/www/forex/yii(23): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "queue/listen". in /var/www/forex/vendor/yiisoft/yii2/console/Application.php:183
+Stack trace:
+#0 /var/www/forex/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('queue/listen', Array)
+#1 /var/www/forex/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 /var/www/forex/yii(23): yii\base\Application->run()
+#3 {main}
+An Error occurred while handling another error:
+yii\base\InvalidConfigException: Unknown component ID: queue in /var/www/forex/vendor/yiisoft/yii2/di/ServiceLocator.php:139
+Stack trace:
+#0 /var/www/forex/vendor/yiisoft/yii2/base/Module.php(742): yii\di\ServiceLocator->get('queue', true)
+#1 /var/www/forex/common/bootstrap/SetUp.php(55): yii\base\Module->get('queue')
+#2 [internal function]: common\bootstrap\SetUp->common\bootstrap\{closure}(Object(yii\di\Container), Array, Array)
+#3 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(163): call_user_func(Object(Closure), Object(yii\di\Container), Array, Array)
+#4 /var/www/forex/common/bootstrap/SetUp.php(79): yii\di\Container->get('yii\\queue\\Queue')
+#5 [internal function]: common\bootstrap\SetUp->common\bootstrap\{closure}(Object(yii\di\Container), Array, Array)
+#6 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(163): call_user_func(Object(Closure), Object(yii\di\Container), Array, Array)
+#7 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(468): yii\di\Container->get('shop\\dispatcher...')
+#8 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(371): yii\di\Container->resolveDependencies(Array, Object(ReflectionClass))
+#9 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('shop\\services\\T...', Array, Array)
+#10 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(468): yii\di\Container->get('shop\\services\\T...')
+#11 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(371): yii\di\Container->resolveDependencies(Array, Object(ReflectionClass))
+#12 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('shop\\useCases\\m...', Array, Array)
+#13 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(468): yii\di\Container->get('shop\\useCases\\m...')
+#14 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(371): yii\di\Container->resolveDependencies(Array, Object(ReflectionClass))
+#15 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('console\\control...', Array, Array)
+#16 /var/www/forex/vendor/yiisoft/yii2/BaseYii.php(345): yii\di\Container->get('console\\control...', Array)
+#17 /var/www/forex/vendor/yiisoft/yii2/base/Module.php(642): yii\BaseYii::createObject('console\\control...', Array)
+#18 /var/www/forex/vendor/yiisoft/yii2/base/Module.php(596): yii\base\Module->createControllerByID('role')
+#19 /var/www/forex/vendor/yiisoft/yii2/console/UnknownCommandException.php(78): yii\base\Module->createController('')
+#20 /var/www/forex/vendor/yiisoft/yii2/console/ErrorHandler.php(35): yii\console\UnknownCommandException->getSuggestedAlternatives()
+#21 /var/www/forex/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\console\ErrorHandler->renderException(Object(yii\console\UnknownCommandException))
+#22 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\console\UnknownCommandException))
+#23 {main}
+Previous exception:
+yii\base\InvalidRouteException: Unable to resolve the request "queue/listen". in /var/www/forex/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/forex/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('queue/listen', Array)
+#1 /var/www/forex/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('queue/listen', Array)
+#2 /var/www/forex/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 /var/www/forex/yii(23): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "queue/listen". in /var/www/forex/vendor/yiisoft/yii2/console/Application.php:183
+Stack trace:
+#0 /var/www/forex/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('queue/listen', Array)
+#1 /var/www/forex/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 /var/www/forex/yii(23): yii\base\Application->run()
+#3 {main}
+An Error occurred while handling another error:
+yii\base\InvalidConfigException: Unknown component ID: queue in /var/www/forex/vendor/yiisoft/yii2/di/ServiceLocator.php:139
+Stack trace:
+#0 /var/www/forex/vendor/yiisoft/yii2/base/Module.php(742): yii\di\ServiceLocator->get('queue', true)
+#1 /var/www/forex/common/bootstrap/SetUp.php(55): yii\base\Module->get('queue')
+#2 [internal function]: common\bootstrap\SetUp->common\bootstrap\{closure}(Object(yii\di\Container), Array, Array)
+#3 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(163): call_user_func(Object(Closure), Object(yii\di\Container), Array, Array)
+#4 /var/www/forex/common/bootstrap/SetUp.php(79): yii\di\Container->get('yii\\queue\\Queue')
+#5 [internal function]: common\bootstrap\SetUp->common\bootstrap\{closure}(Object(yii\di\Container), Array, Array)
+#6 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(163): call_user_func(Object(Closure), Object(yii\di\Container), Array, Array)
+#7 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(468): yii\di\Container->get('shop\\dispatcher...')
+#8 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(371): yii\di\Container->resolveDependencies(Array, Object(ReflectionClass))
+#9 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('shop\\services\\T...', Array, Array)
+#10 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(468): yii\di\Container->get('shop\\services\\T...')
+#11 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(371): yii\di\Container->resolveDependencies(Array, Object(ReflectionClass))
+#12 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('shop\\useCases\\m...', Array, Array)
+#13 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(468): yii\di\Container->get('shop\\useCases\\m...')
+#14 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(371): yii\di\Container->resolveDependencies(Array, Object(ReflectionClass))
+#15 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('console\\control...', Array, Array)
+#16 /var/www/forex/vendor/yiisoft/yii2/BaseYii.php(345): yii\di\Container->get('console\\control...', Array)
+#17 /var/www/forex/vendor/yiisoft/yii2/base/Module.php(642): yii\BaseYii::createObject('console\\control...', Array)
+#18 /var/www/forex/vendor/yiisoft/yii2/base/Module.php(596): yii\base\Module->createControllerByID('role')
+#19 /var/www/forex/vendor/yiisoft/yii2/console/UnknownCommandException.php(78): yii\base\Module->createController('')
+#20 /var/www/forex/vendor/yiisoft/yii2/console/ErrorHandler.php(35): yii\console\UnknownCommandException->getSuggestedAlternatives()
+#21 /var/www/forex/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\console\ErrorHandler->renderException(Object(yii\console\UnknownCommandException))
+#22 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\console\UnknownCommandException))
+#23 {main}
+Previous exception:
+yii\base\InvalidRouteException: Unable to resolve the request "queue/listen". in /var/www/forex/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/forex/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('queue/listen', Array)
+#1 /var/www/forex/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('queue/listen', Array)
+#2 /var/www/forex/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 /var/www/forex/yii(23): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "queue/listen". in /var/www/forex/vendor/yiisoft/yii2/console/Application.php:183
+Stack trace:
+#0 /var/www/forex/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('queue/listen', Array)
+#1 /var/www/forex/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 /var/www/forex/yii(23): yii\base\Application->run()
+#3 {main}
+An Error occurred while handling another error:
+yii\base\InvalidConfigException: Unknown component ID: queue in /var/www/forex/vendor/yiisoft/yii2/di/ServiceLocator.php:139
+Stack trace:
+#0 /var/www/forex/vendor/yiisoft/yii2/base/Module.php(742): yii\di\ServiceLocator->get('queue', true)
+#1 /var/www/forex/common/bootstrap/SetUp.php(55): yii\base\Module->get('queue')
+#2 [internal function]: common\bootstrap\SetUp->common\bootstrap\{closure}(Object(yii\di\Container), Array, Array)
+#3 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(163): call_user_func(Object(Closure), Object(yii\di\Container), Array, Array)
+#4 /var/www/forex/common/bootstrap/SetUp.php(79): yii\di\Container->get('yii\\queue\\Queue')
+#5 [internal function]: common\bootstrap\SetUp->common\bootstrap\{closure}(Object(yii\di\Container), Array, Array)
+#6 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(163): call_user_func(Object(Closure), Object(yii\di\Container), Array, Array)
+#7 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(468): yii\di\Container->get('shop\\dispatcher...')
+#8 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(371): yii\di\Container->resolveDependencies(Array, Object(ReflectionClass))
+#9 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('shop\\services\\T...', Array, Array)
+#10 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(468): yii\di\Container->get('shop\\services\\T...')
+#11 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(371): yii\di\Container->resolveDependencies(Array, Object(ReflectionClass))
+#12 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('shop\\useCases\\m...', Array, Array)
+#13 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(468): yii\di\Container->get('shop\\useCases\\m...')
+#14 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(371): yii\di\Container->resolveDependencies(Array, Object(ReflectionClass))
+#15 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('console\\control...', Array, Array)
+#16 /var/www/forex/vendor/yiisoft/yii2/BaseYii.php(345): yii\di\Container->get('console\\control...', Array)
+#17 /var/www/forex/vendor/yiisoft/yii2/base/Module.php(642): yii\BaseYii::createObject('console\\control...', Array)
+#18 /var/www/forex/vendor/yiisoft/yii2/base/Module.php(596): yii\base\Module->createControllerByID('role')
+#19 /var/www/forex/vendor/yiisoft/yii2/console/UnknownCommandException.php(78): yii\base\Module->createController('')
+#20 /var/www/forex/vendor/yiisoft/yii2/console/ErrorHandler.php(35): yii\console\UnknownCommandException->getSuggestedAlternatives()
+#21 /var/www/forex/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\console\ErrorHandler->renderException(Object(yii\console\UnknownCommandException))
+#22 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\console\UnknownCommandException))
+#23 {main}
+Previous exception:
+yii\base\InvalidRouteException: Unable to resolve the request "queue/listen". in /var/www/forex/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/forex/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('queue/listen', Array)
+#1 /var/www/forex/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('queue/listen', Array)
+#2 /var/www/forex/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 /var/www/forex/yii(23): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "queue/listen". in /var/www/forex/vendor/yiisoft/yii2/console/Application.php:183
+Stack trace:
+#0 /var/www/forex/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('queue/listen', Array)
+#1 /var/www/forex/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 /var/www/forex/yii(23): yii\base\Application->run()
+#3 {main}
+An Error occurred while handling another error:
+yii\base\InvalidConfigException: Unknown component ID: queue in /var/www/forex/vendor/yiisoft/yii2/di/ServiceLocator.php:139
+Stack trace:
+#0 /var/www/forex/vendor/yiisoft/yii2/base/Module.php(742): yii\di\ServiceLocator->get('queue', true)
+#1 /var/www/forex/common/bootstrap/SetUp.php(55): yii\base\Module->get('queue')
+#2 [internal function]: common\bootstrap\SetUp->common\bootstrap\{closure}(Object(yii\di\Container), Array, Array)
+#3 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(163): call_user_func(Object(Closure), Object(yii\di\Container), Array, Array)
+#4 /var/www/forex/common/bootstrap/SetUp.php(79): yii\di\Container->get('yii\\queue\\Queue')
+#5 [internal function]: common\bootstrap\SetUp->common\bootstrap\{closure}(Object(yii\di\Container), Array, Array)
+#6 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(163): call_user_func(Object(Closure), Object(yii\di\Container), Array, Array)
+#7 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(468): yii\di\Container->get('shop\\dispatcher...')
+#8 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(371): yii\di\Container->resolveDependencies(Array, Object(ReflectionClass))
+#9 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('shop\\services\\T...', Array, Array)
+#10 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(468): yii\di\Container->get('shop\\services\\T...')
+#11 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(371): yii\di\Container->resolveDependencies(Array, Object(ReflectionClass))
+#12 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('shop\\useCases\\m...', Array, Array)
+#13 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(468): yii\di\Container->get('shop\\useCases\\m...')
+#14 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(371): yii\di\Container->resolveDependencies(Array, Object(ReflectionClass))
+#15 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('console\\control...', Array, Array)
+#16 /var/www/forex/vendor/yiisoft/yii2/BaseYii.php(345): yii\di\Container->get('console\\control...', Array)
+#17 /var/www/forex/vendor/yiisoft/yii2/base/Module.php(642): yii\BaseYii::createObject('console\\control...', Array)
+#18 /var/www/forex/vendor/yiisoft/yii2/base/Module.php(596): yii\base\Module->createControllerByID('role')
+#19 /var/www/forex/vendor/yiisoft/yii2/console/UnknownCommandException.php(78): yii\base\Module->createController('')
+#20 /var/www/forex/vendor/yiisoft/yii2/console/ErrorHandler.php(35): yii\console\UnknownCommandException->getSuggestedAlternatives()
+#21 /var/www/forex/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\console\ErrorHandler->renderException(Object(yii\console\UnknownCommandException))
+#22 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\console\UnknownCommandException))
+#23 {main}
+Previous exception:
+yii\base\InvalidRouteException: Unable to resolve the request "queue/listen". in /var/www/forex/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/forex/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('queue/listen', Array)
+#1 /var/www/forex/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('queue/listen', Array)
+#2 /var/www/forex/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 /var/www/forex/yii(23): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "queue/listen". in /var/www/forex/vendor/yiisoft/yii2/console/Application.php:183
+Stack trace:
+#0 /var/www/forex/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('queue/listen', Array)
+#1 /var/www/forex/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 /var/www/forex/yii(23): yii\base\Application->run()
+#3 {main}
+An Error occurred while handling another error:
+yii\base\InvalidConfigException: Unknown component ID: queue in /var/www/forex/vendor/yiisoft/yii2/di/ServiceLocator.php:139
+Stack trace:
+#0 /var/www/forex/vendor/yiisoft/yii2/base/Module.php(742): yii\di\ServiceLocator->get('queue', true)
+#1 /var/www/forex/common/bootstrap/SetUp.php(55): yii\base\Module->get('queue')
+#2 [internal function]: common\bootstrap\SetUp->common\bootstrap\{closure}(Object(yii\di\Container), Array, Array)
+#3 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(163): call_user_func(Object(Closure), Object(yii\di\Container), Array, Array)
+#4 /var/www/forex/common/bootstrap/SetUp.php(79): yii\di\Container->get('yii\\queue\\Queue')
+#5 [internal function]: common\bootstrap\SetUp->common\bootstrap\{closure}(Object(yii\di\Container), Array, Array)
+#6 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(163): call_user_func(Object(Closure), Object(yii\di\Container), Array, Array)
+#7 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(468): yii\di\Container->get('shop\\dispatcher...')
+#8 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(371): yii\di\Container->resolveDependencies(Array, Object(ReflectionClass))
+#9 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('shop\\services\\T...', Array, Array)
+#10 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(468): yii\di\Container->get('shop\\services\\T...')
+#11 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(371): yii\di\Container->resolveDependencies(Array, Object(ReflectionClass))
+#12 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('shop\\useCases\\m...', Array, Array)
+#13 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(468): yii\di\Container->get('shop\\useCases\\m...')
+#14 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(371): yii\di\Container->resolveDependencies(Array, Object(ReflectionClass))
+#15 /var/www/forex/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('console\\control...', Array, Array)
+#16 /var/www/forex/vendor/yiisoft/yii2/BaseYii.php(345): yii\di\Container->get('console\\control...', Array)
+#17 /var/www/forex/vendor/yiisoft/yii2/base/Module.php(642): yii\BaseYii::createObject('console\\control...', Array)
+#18 /var/www/forex/vendor/yiisoft/yii2/base/Module.php(596): yii\base\Module->createControllerByID('role')
+#19 /var/www/forex/vendor/yiisoft/yii2/console/UnknownCommandException.php(78): yii\base\Module->createController('')
+#20 /var/www/forex/vendor/yiisoft/yii2/console/ErrorHandler.php(35): yii\console\UnknownCommandException->getSuggestedAlternatives()
+#21 /var/www/forex/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\console\ErrorHandler->renderException(Object(yii\console\UnknownCommandException))
+#22 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\console\UnknownCommandException))
+#23 {main}
+Previous exception:
+yii\base\InvalidRouteException: Unable to resolve the request "queue/listen". in /var/www/forex/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /var/www/forex/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('queue/listen', Array)
+#1 /var/www/forex/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('queue/listen', Array)
+#2 /var/www/forex/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 /var/www/forex/yii(23): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "queue/listen". in /var/www/forex/vendor/yiisoft/yii2/console/Application.php:183
+Stack trace:
+#0 /var/www/forex/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('queue/listen', Array)
+#1 /var/www/forex/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 /var/www/forex/yii(23): yii\base\Application->run()
+#3 {main}
